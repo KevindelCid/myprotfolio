@@ -94,14 +94,7 @@ const Header = () => {
                     items.map(item => (
                         <Item
                          key={item.id} className='technologi-card'
-                         whileHover={{
-                            rotate: 360,
-                            transition: { duration: .3 },
-                          }}
-                         
-                          
-                         animate={{ y: [item.id*-100, 10, 0], x: [item.id*10, 10, 0] }}
-                         transition={{ easeOut: "ease", duration: item.id/3 }}
+                        
                         item={item} >
                            
                         </Item>
