@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;800&display=swap');
+
+*{
+  margin: 0 ;
+  padding:0;
+  box-sizing: border-box;
+}
+
+
+  #root{
+    --primary-text-color: rgb(143, 26, 212);
+    --secondary-text-color: rgb(212, 1, 61);
+    --hover-color: rgb(128, 0, 36);
+    --hover-color2:  rgb(65, 0, 103);
+  }
+  body{
+    font-family: 'Proza Libre', sans-serif;
+    
+  }
+li{list-style: none;}
+
+h1{
+ 
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+.name-container{
+  width: fit-content;
+}
+.gradiant-effect-for-text1{
+  background:  #ccc;
+  background: linear-gradient( 90deg,  var(--primary-text-color), var(--secondary-text-color));
+  
+  font-size: 4rem;
+  -webkit-text-fill-color:
+  transparent;
+  -webkit-background-clip: text;
+}
+
+.primary-gradiant{
+  background: linear-gradient( 90deg,  var(--primary-text-color), var(--secondary-text-color));
+  color: whitesmoke;
+}
+
+.gradiant-effect-for-text2{
+  background:  #ccc;
+  background: radial-gradient(   var(--primary-text-color), var(--secondary-text-color));
+  
+  font-size: 3rem;
+  -webkit-text-fill-color:
+  transparent;
+  -webkit-background-clip: text;
+  z-index: 5;
+}
+
+
+.technology-img{
+  width: 70px;
+  height: 70px;
+}
+
+
+.technologies{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.btn{
+  padding: 15px;
+  border-radius: .5rem;
+  border: none;
+  margin: 10px;
+}
+
+
+.btn-contact:hover{
+  scale: 1.1;
+  font-weight: bold;
+  background: radial-gradient(   var(--hover-color), var(--hover-color2));
+  transition: .2s linear;
+ 
+  
+}
