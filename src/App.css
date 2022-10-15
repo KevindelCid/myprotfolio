@@ -8,7 +8,7 @@
 
 #root {
   --primary-text-color: rgb(0, 183, 255);
-  --secondary-text-color: rgb(1, 255, 221);
+  --secondary-text-color: rgb(1, 255, 255);
   --primary-text-color2: rgb(255, 174, 0);
   --secondary-text-color2: rgb(255, 124, 1);
   --primary-text-color2-bk: rgba(255, 174, 0, 0.096);
@@ -130,7 +130,7 @@ img {
   -webkit-transform: scale(0) rotate(0deg);
   transform: scale(0) rotate(0deg);
   -webkit-animation: cube 22s ease-in forwards infinite;
-  animation: cube 22s ease-in forwards infinite;
+  animation: cube 55s ease-in forwards infinite;
   z-index: -10;
 }
 .cube:nth-child(2n) {
