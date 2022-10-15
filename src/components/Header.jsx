@@ -59,12 +59,12 @@ const Header = () => {
 
   return (
     <header className="header-container">
-      <div class="cube"></div>
-      <div class="cube"></div>
-      <div class="cube"></div>
-      <div class="cube"></div>
-      <div class="cube"></div>
-      <div class="cube"></div>
+      <div className="cube"></div>
+      <div className="cube"></div>
+      <div className="cube"></div>
+      <div className="cube"></div>
+      <div className="cube"></div>
+      <div className="cube"></div>
       <div>
         <section className="name-container">
           <motion.h3

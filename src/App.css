@@ -123,8 +123,8 @@ img {
   border: solid 1px var(--secondary-text-color-bk);
   -webkit-transform-origin: top left;
   transform-origin: top left;
-  -webkit-transform: scale(0) rotate(0deg) translate(-50%, -50%);
-  transform: scale(0) rotate(0deg) translate(-50%, -50%);
+  -webkit-transform: scale(0) rotate(0deg);
+  transform: scale(0) rotate(0deg);
   -webkit-animation: cube 22s ease-in forwards infinite;
   animation: cube 22s ease-in forwards infinite;
   z-index: -10;
@@ -165,12 +165,12 @@ img {
 
 @-webkit-keyframes cube {
   from {
-    -webkit-transform: scale(0) rotate(0deg) translate(-50%, -50%);
-    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    -webkit-transform: scale(5) rotate(0deg) translate(-50%, -50%);
+    transform: scale(10) rotate(0deg) translate(-50%, -50%);
     opacity: 1;
   }
   to {
-    -webkit-transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    -webkit-transform: scale(5) rotate(960deg) translate(-50%, -50%);
     transform: scale(20) rotate(960deg) translate(-50%, -50%);
     opacity: 0;
   }
@@ -178,8 +178,8 @@ img {
 
 @keyframes cube {
   from {
-    -webkit-transform: scale(0) rotate(0deg) translate(-50%, -50%);
-    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    -webkit-transform: scale(5) rotate(0deg) translate(-50%, -50%);
+    transform: scale(5) rotate(0deg) translate(-50%, -50%);
     opacity: 1;
   }
   to {
