@@ -9,8 +9,8 @@
 #root {
   --primary-text-color: rgb(0, 183, 255);
   --secondary-text-color: rgb(1, 255, 221);
-  --primary-text-color-bk: rgba(0, 183, 255, 0.219);
-  --secondary-text-color-bk: rgba(1, 255, 221, 0.212);
+  --primary-text-color-bk: rgba(0, 183, 255, 0.096);
+  --secondary-text-color-bk: rgba(1, 255, 221, 0.096);
   --hover-color: rgb(128, 0, 36);
   --hover-color2: rgb(65, 0, 103);
   --border-white: rgba(252, 252, 252, 0);
