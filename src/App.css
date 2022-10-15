@@ -24,6 +24,7 @@ body {
   font-family: "Proza Libre", sans-serif;
   background-color: rgb(43, 54, 61);
   color: whitesmoke;
+  mix-blend-mode: screen;
 }
 li {
   list-style: none;
@@ -39,9 +40,36 @@ img {
   -o-user-drag: none;
   user-drag: none;
 }
+
+.img-profile-container {
+  width: 200px;
+  height: 300px;
+  mix-blend-mode: difference;
+}
+
 .name-container {
   width: fit-content;
 }
+.header-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  margin: 0 auto;
+
+  max-width: 1200px;
+  min-width: 400px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.img-profile {
+  width: 350px;
+}
+
 .gradiant-effect-for-text1 {
   background: #ccc;
   background: linear-gradient(
@@ -64,6 +92,10 @@ img {
   );
   color: whitesmoke;
 }
+.header-content {
+  text-align: center;
+  padding: 20px;
+}
 
 .gradiant-effect-for-text2 {
   background: #ccc;
@@ -82,6 +114,21 @@ img {
 .technology-img {
   width: 70px;
   height: 70px;
+}
+
+.gray-scale-filter {
+  filter: grayscale(90%);
+  -webkit-filter: grayscale(90%);
+  -moz-filter: grayscale(90%);
+  -ms-filter: grayscale(90%);
+  -o-filter: grayscale(90%);
+}
+.normal-filer {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
 }
 
 .technologies {
@@ -119,7 +166,7 @@ img {
 }
 
 .cube {
-  position: absolute;
+  position: fixed;
   top: 80vh;
   left: 45vw;
   width: 10px;

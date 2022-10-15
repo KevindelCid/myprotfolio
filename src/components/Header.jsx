@@ -65,8 +65,15 @@ const Header = () => {
       <div className="cube"></div>
       <div className="cube"></div>
       <div className="cube"></div>
-      <div>
-        <section className="name-container">
+
+      {/* <section className="name-container"> */}
+      <div className="header1">
+        <img
+          className="img-profile"
+          src="https://i.postimg.cc/CxHS397c/kdcf.png"
+          alt=""
+        />
+        <div className="header-content">
           <motion.h3
             animate={{ y: [-1000, 10, 0], x: [-1000, 10, 0] }}
             transition={{ ease: "easeOut", duration: 0.7 }}
@@ -89,26 +96,28 @@ const Header = () => {
             del Cid
           </motion.h2>
           <motion.h3>y soy un fanático del código! :D</motion.h3>
+
           <motion.button
             className="btn btn-contact primary-gradiant"
             animate={{ scale: [5, 1], x: [200, 0] }}
           >
             ¡Contáctame!
           </motion.button>
-        </section>
+        </div>
       </div>
-      <section>
-        <Reorder.Group
-          className="technologies"
-          axis="x"
-          values={items}
-          onReorder={setItems}
-        >
-          {items.map((item) => (
-            <Item key={item.id} className="technologi-card" item={item}></Item>
-          ))}
-        </Reorder.Group>
-      </section>
+
+      {/* </section> */}
+
+      <Reorder.Group
+        className="technologies"
+        axis="x"
+        values={items}
+        onReorder={setItems}
+      >
+        {items.map((item) => (
+          <Item key={item.id} className="technologi-card" item={item}></Item>
+        ))}
+      </Reorder.Group>
     </header>
   );
 };
