@@ -80,7 +80,7 @@ img {
   );
 
   -webkit-text-stroke: 1px var(--border-white);
-  font-size: 4rem;
+  font-size: 3rem;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
