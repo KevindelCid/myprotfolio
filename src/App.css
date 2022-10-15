@@ -9,6 +9,10 @@
 #root {
   --primary-text-color: rgb(0, 183, 255);
   --secondary-text-color: rgb(1, 255, 221);
+  --primary-text-color2: rgb(255, 174, 0);
+  --secondary-text-color2: rgb(255, 124, 1);
+  --primary-text-color2-bk: rgba(255, 174, 0, 0.096);
+  --secondary-text-color2-bk: rgba(255, 124, 1, 0.096);
   --primary-text-color-bk: rgba(0, 183, 255, 0.096);
   --secondary-text-color-bk: rgba(1, 255, 221, 0.096);
   --hover-color: rgb(128, 0, 36);
@@ -64,8 +68,8 @@ img {
 .gradiant-effect-for-text2 {
   background: #ccc;
   background: radial-gradient(
-    var(--primary-text-color),
-    var(--secondary-text-color)
+    var(--primary-text-color2),
+    var(--secondary-text-color2)
   );
 
   -webkit-text-stroke: 1px var(--border-white);
@@ -130,7 +134,7 @@ img {
   z-index: -10;
 }
 .cube:nth-child(2n) {
-  border-color: var(--primary-text-color-bk);
+  border-color: var(--primary-text-color2-bk);
 }
 .cube:nth-child(2) {
   -webkit-animation-delay: 6s;
