@@ -20,6 +20,14 @@ const NavBar = () => {
         <li>
           <i className="fa-solid fa-house-user"></i>
         </li>
+        {/* 
+
+        <li>
+          <i className="fa-solid fa-download"></i>es
+        </li>
+        <li>
+          <i className="fa-solid fa-download"></i>en
+        </li> */}
       </ul>
     </motion.nav>
   );
