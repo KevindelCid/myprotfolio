@@ -7,8 +7,8 @@
 }
 
 #root {
-  --primary-text-color: rgb(0, 225, 255);
-  --secondary-text-color: rgb(1, 255, 149);
+  --primary-text-color: rgb(0, 183, 255);
+  --secondary-text-color: rgb(1, 255, 221);
   --hover-color: rgb(128, 0, 36);
   --hover-color2: rgb(65, 0, 103);
   --border-white: rgba(252, 252, 252, 0);
