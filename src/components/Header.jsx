@@ -68,7 +68,9 @@ const Header = () => {
 
       {/* <section className="name-container"> */}
       <div className="header1">
-        <img
+        <motion.img
+          animate={{ opacity: [0, 1] }}
+          transition={{ duration: 1 }}
           className="img-profile"
           src="https://i.postimg.cc/CxHS397c/kdcf.png"
           alt=""

@@ -67,8 +67,11 @@ img {
 }
 
 .img-profile {
-  width: 300px;
-  margin-top: -50px;
+  width: 350px;
+  height: 350px;
+  object-fit: contain;
+
+  border-radius: 100%;
 }
 
 .gradiant-effect-for-text1 {
