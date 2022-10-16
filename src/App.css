@@ -192,10 +192,10 @@ i {
   -o-filter: grayscale(90%);
 }
 
-.skills-container {
+/* .skills-container {
   border: dashed 1px #ccc;
   height: 40em;
-}
+} */
 
 .technologies {
   display: flex;
@@ -349,6 +349,7 @@ i {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  height: 21em;
   gap: 20px;
 }
 
@@ -375,7 +376,7 @@ i {
 }
 .img-about {
   max-width: 800px;
-  min-width: 200px;
+  min-width: 100px;
 
   height: 280px;
   object-fit: cover;
@@ -400,10 +401,18 @@ b-b {
   display: flex;
   justify-content: flex-end;
 }
+.comment {
+  color: rgb(160, 160, 160);
+}
+.comment a {
+  color: rgb(160, 160, 160);
+}
 .section-skills {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  border-bottom: 1px solid #ccc;
+  padding: 0 10px;
 }
 
 @media only screen and (min-width: 625px) {
@@ -412,7 +421,7 @@ b-b {
     height: 70px;
   }
   .skills-container {
-    height: 20em;
+    height: 12em;
   }
 }
 

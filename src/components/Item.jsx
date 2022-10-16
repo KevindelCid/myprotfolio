@@ -10,17 +10,7 @@ export const Item = ({ item }) => {
   const boxShadow = useRaisedShadow(y);
   console.log(item);
   return (
-    // <Reorder.Item value={item} id={item.id} style={{ boxShadow, y }}>
-    <motion.div
-      className="item-container"
-      drag
-      dragConstraints={{
-        top: -45,
-        left: -20,
-        right: 20,
-        bottom: 160,
-      }}
-    >
+    <motion.div className="item-container">
       <motion.img
         className={`technology-img ${grayFilter}`}
         onHoverStart={() => setGrayFilter("normal-filer")}
@@ -45,6 +35,5 @@ export const Item = ({ item }) => {
         {item.exp.substring(2)}
       </motion.p>
     </motion.div>
-    // </Reorder.Item>
   );
 };

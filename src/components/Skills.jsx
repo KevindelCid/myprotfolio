@@ -11,8 +11,8 @@ const Skills = () => {
         <div className="title-skills-container">
           <h2 className="normalize-large-text ">
             <small className="small-code gradiant-effect-for-text1 normalize-medium-text">
-              deCid.
-            </small>{" "}
+              kDelCid.{" "}
+            </small>
             <span className="gradiant-effect-for-text2 normalize-larger-text ">
               H
             </span>
@@ -34,23 +34,15 @@ const Skills = () => {
           </li>
         ))}
       </ul> */}
-
-      <Reorder.Group
-        className="skills-container"
-        // axis="x"
-
-        values={items}
-        onReorder={setItems}
-      >
-        {items.map((item) => (
+      <div className="skills-container">
+        {technologies.map((item) => (
           <Item
             key={item.id}
             className="skills-img-container"
             item={item}
           ></Item>
         ))}
-      </Reorder.Group>
-
+      </div>
       <h2 className="normalize-large-text">{"});"}</h2>
     </section>
   );
