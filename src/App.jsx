@@ -1,8 +1,10 @@
 import { useState } from "react";
 
 import "./App.css";
+import AboutMe from "./components/AboutMe";
 import Header from "./components/Header";
 import NavBar from "./components/NavBar";
+import Skills from "./components/Skills";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -10,99 +12,10 @@ function App() {
   return (
     <div className="container">
       <NavBar />
-      <div className="home-container">
-        <Header />
-        <section className="qualities-container">
-          <ul className="option">
-            <li>
-              Cv es
-              <div className="options-cv">
-                <i className="fa-solid fa-download"></i>
-                <i className="fa-solid fa-eye"></i>
-              </div>
-            </li>
-            <li>
-              <li>
-                Cv en
-                <div className="options-cv">
-                  <i className="fa-solid fa-download"></i>
-                  <i className="fa-solid fa-eye"></i>
-                </div>
-              </li>
-            </li>
-            <li>
-              Cv es
-              <div className="options-cv">
-                <i className="fa-solid fa-download"></i>
-                <i className="fa-solid fa-eye"></i>
-              </div>
-            </li>
-            <li>
-              Cv es
-              <div className="options-cv">
-                <i className="fa-solid fa-download"></i>
-                <i className="fa-solid fa-eye"></i>
-              </div>
-            </li>
-            <li>
-              Cv es
-              <div className="options-cv">
-                <i className="fa-solid fa-download"></i>
-                <i className="fa-solid fa-eye"></i>
-              </div>
-            </li>
-            <li>
-              Cv es
-              <div className="options-cv">
-                <i className="fa-solid fa-download"></i>
-                <i className="fa-solid fa-eye"></i>
-              </div>
-            </li>
-            <li>
-              Cv es
-              <div className="options-cv">
-                <i className="fa-solid fa-download"></i>
-                <i className="fa-solid fa-eye"></i>
-              </div>
-            </li>
-            <li>
-              Cv es
-              <div className="options-cv">
-                <i className="fa-solid fa-download"></i>
-                <i className="fa-solid fa-eye"></i>
-              </div>
-            </li>
-            <li>
-              Cv es
-              <div className="options-cv">
-                <i className="fa-solid fa-download"></i>
-                <i className="fa-solid fa-eye"></i>
-              </div>
-            </li>
-            <li>
-              Cv es
-              <div className="options-cv">
-                <i className="fa-solid fa-download"></i>
-                <i className="fa-solid fa-eye"></i>
-              </div>
-            </li>
-            <li>
-              Cv es
-              <div className="options-cv">
-                <i className="fa-solid fa-download"></i>
-                <i className="fa-solid fa-eye"></i>
-              </div>
-            </li>
-            <li>
-              Cv es
-              <div className="options-cv">
-                <i className="fa-solid fa-download"></i>
-                <i className="fa-solid fa-eye"></i>
-              </div>
-            </li>
-          </ul>
-        </section>
-      </div>
+
+      <Header />
+      <AboutMe />
+      <Skills />
     </div>
   );
 }

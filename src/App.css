@@ -24,7 +24,6 @@ body {
   font-family: "Proza Libre", sans-serif;
   background-color: rgb(43, 54, 61);
   color: whitesmoke;
-  mix-blend-mode: screen;
 }
 li {
   list-style: none;
@@ -62,8 +61,6 @@ img {
 
   max-width: 1200px;
   min-width: 300px;
-  display: flex;
-  justify-content: flex-end;
 }
 .options-cv {
   display: flex;
@@ -76,11 +73,16 @@ img {
   display: flex;
   flex-direction: row;
   gap: 15px;
+  overflow: auto;
 }
 
 .qualities-container {
   max-width: 400px;
   min-width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .home-container {
@@ -89,7 +91,7 @@ img {
   max-width: 1200px;
   min-width: 300px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -305,6 +307,56 @@ i {
   }
 }
 
+.normalize-medium-text {
+  font-size: medium !important;
+}
+.normalize-large-text {
+  font-size: 50px !important;
+}
+/* .normalize-large-text {
+  font-size: larger !important;
+} */
+
+.p-aboutme {
+  max-width: 450px;
+  min-width: 200px;
+}
+
+.aboutme-text-container {
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.t-r {
+  justify-content: flex-end;
+}
+.img-about {
+  max-width: 800px;
+  min-width: 200px;
+
+  height: 280px;
+  object-fit: cover;
+}
+.about {
+  display: flex;
+  flex-direction: row;
+  margin: 0 10px;
+  gap: 10px;
+  padding-bottom: 40px;
+}
+.aboutme-section {
+  padding-top: 40px;
+}
+
+.tittle-skills {
+  display: flex;
+  justify-content: flex-end;
+}
+
 @media only screen and (min-width: 1000px) {
   .header1 {
     display: flex;
@@ -326,5 +378,8 @@ i {
   }
   .gradiant-effect-for-text2 {
     font-size: 4rem;
+  }
+  .img-about {
+    width: 100%;
   }
 }

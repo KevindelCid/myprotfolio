@@ -72,7 +72,7 @@ const Header = () => {
           animate={{ opacity: [0, 1] }}
           transition={{ duration: 1 }}
           className="img-profile"
-          src="https://i.postimg.cc/CxHS397c/kdcf.png"
+          src="https://i.postimg.cc/yxs5rmbL/kdcf.png"
           alt=""
         />
         <div className="header-content">
@@ -105,6 +105,26 @@ const Header = () => {
           >
             ¡Contáctame!
           </motion.button>
+          <section className="qualities-container">
+            <ul className="option">
+              <li>
+                Cv es
+                <div className="options-cv">
+                  <i className="fa-solid fa-download"></i>
+                  <i className="fa-solid fa-eye"></i>
+                </div>
+              </li>
+              <li>
+                <li>
+                  Cv en
+                  <div className="options-cv">
+                    <i className="fa-solid fa-download"></i>
+                    <i className="fa-solid fa-eye"></i>
+                  </div>
+                </li>
+              </li>
+            </ul>
+          </section>
         </div>
       </div>
 
