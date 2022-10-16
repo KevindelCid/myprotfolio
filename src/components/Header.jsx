@@ -1,60 +1,9 @@
 import React, { useState } from "react";
 import { motion, Reorder } from "framer-motion";
 import { Item } from "./Item";
+import { technologies } from "../utils";
 
 const Header = () => {
-  const technologies = [
-    {
-      id: 1,
-
-      category: "lib",
-      name: "ReactJs",
-      png: "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png",
-      description: "libreria para JavaScript",
-    },
-    {
-      id: 2,
-      category: "len",
-      name: "JavaScript",
-      png: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
-      description: "Lenguaje de programación",
-    },
-    {
-      id: 3,
-      category: "framework",
-      name: "Laravel",
-      png: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/985px-Laravel.svg.png",
-      description: "Framework para backend con PHP",
-    },
-    {
-      id: 4,
-      category: "len",
-      name: "PHP",
-      png: "https://cdn.freebiesupply.com/logos/large/2x/php-logo-png-transparent.png",
-      description: "Lenguaje de programación",
-    },
-    {
-      id: 5,
-      category: "maq",
-      name: "HTML5",
-      png: "https://cdn-icons-png.flaticon.com/512/732/732212.png",
-      description: "lenguaje de maquetado",
-    },
-    {
-      id: 6,
-      category: "style",
-      name: "CSS3",
-      png: "https://danielcastillo.dev/assets/img/skills/css.png",
-      description: "Cascade Style Sheet",
-    },
-    {
-      id: 7,
-      category: "db",
-      name: "MySQL",
-      png: "https://pngimg.com/uploads/mysql/mysql_PNG35.png",
-      description: "Base de datos relacional",
-    },
-  ];
   const [items, setItems] = useState(technologies);
 
   return (
@@ -130,7 +79,7 @@ const Header = () => {
 
       {/* </section> */}
 
-      <Reorder.Group
+      {/* <Reorder.Group
         className="technologies"
         axis="x"
         values={items}
@@ -139,7 +88,7 @@ const Header = () => {
         {items.map((item) => (
           <Item key={item.id} className="technologi-card" item={item}></Item>
         ))}
-      </Reorder.Group>
+      </Reorder.Group> */}
     </header>
   );
 };

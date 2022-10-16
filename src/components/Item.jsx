@@ -10,7 +10,17 @@ export const Item = ({ item }) => {
   const boxShadow = useRaisedShadow(y);
   console.log(item);
   return (
-    <Reorder.Item value={item} id={item.id} style={{ boxShadow, y }}>
+    // <Reorder.Item value={item} id={item.id} style={{ boxShadow, y }}>
+    <motion.div
+      className="item-container"
+      drag
+      dragConstraints={{
+        top: -45,
+        left: -20,
+        right: 20,
+        bottom: 160,
+      }}
+    >
       <motion.img
         className={`technology-img ${grayFilter}`}
         onHoverStart={() => setGrayFilter("normal-filer")}
@@ -21,9 +31,20 @@ export const Item = ({ item }) => {
           rotate: 360,
           transition: { duration: 0.3 },
         }}
-        animate={{ y: [item.id * -100, 10, 0], x: [item.id * 10, 10, 0] }}
+        animate={{
+          y: [item.id * -100, 55],
+          x: [item.id * 10, 10, 0],
+        }}
         transition={{ easeOut: "ease", duration: item.id / 3 }}
       />
-    </Reorder.Item>
+
+      <motion.p animate={{ y: [item.id * -100, 55] }}>
+        <span className=" gradiant-effect-for-text1 normalize-medium-text">
+          {item.exp.substring(0, 2)}
+        </span>
+        {item.exp.substring(2)}
+      </motion.p>
+    </motion.div>
+    // </Reorder.Item>
   );
 };

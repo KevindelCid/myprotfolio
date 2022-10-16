@@ -71,6 +71,7 @@ const AboutMe = () => {
               >
                 i
               </motion.span>
+              {"{"}
             </h2>
 
             <motion.p
@@ -95,6 +96,7 @@ const AboutMe = () => {
                 </li>
               </ul>
             </motion.p>
+            <h2 className="normalize-large-text">{"}"}</h2>
           </div>
           <img
             className="img-about normal-filer"
