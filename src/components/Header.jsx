@@ -20,11 +20,17 @@ const Header = () => {
         <motion.img
           animate={{ opacity: [0, 1] }}
           transition={{ duration: 1 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           className="img-profile"
           src="https://i.postimg.cc/yxs5rmbL/kdcf.png"
           alt=""
         />
-        <div className="header-content">
+        <motion.div
+          className="header-content"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+        >
           <motion.h3
             animate={{ y: [-1000, 10, 0], x: [-1000, 10, 0] }}
             transition={{ ease: "easeOut", duration: 0.7 }}
@@ -74,9 +80,19 @@ const Header = () => {
               </li>
             </ul>
           </section>
-        </div>
+        </motion.div>
       </div>
-
+      <motion.i
+        className="fa-solid fa-down-long"
+        // initial={{y:0}}
+        animate={{
+          y: [0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0],
+          opacity: [
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0,
+          ],
+        }}
+        transition={{ ease: "easeOut", duration: 10 }}
+      ></motion.i>
       {/* </section> */}
 
       {/* <Reorder.Group

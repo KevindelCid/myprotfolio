@@ -129,6 +129,12 @@ i {
   align-items: center;
   gap: 20px;
   z-index: 50;
+  padding: 15px 0;
+  border-radius: 0rem 0.5rem 0.5rem 0rem;
+}
+
+a i {
+  color: whitesmoke;
 }
 
 .gradiant-effect-for-text1 {
@@ -391,6 +397,32 @@ i {
 .aboutme-section {
   padding-top: 40px;
   border-bottom: 1px solid #ccc;
+}
+.img-proyects-container {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  gap: 15px;
+}
+.img-proyect {
+  min-width: 100px;
+}
+.img-proyects-container2 {
+  display: flex;
+
+  flex-direction: row-reverse;
+  padding: 15px;
+  gap: 15px;
+}
+.tech-proyect {
+  width: 40px;
+}
+.tech-proyect-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: revert;
+  padding: 15px;
 }
 
 b-b {

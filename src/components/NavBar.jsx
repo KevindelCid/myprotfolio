@@ -6,10 +6,14 @@ const NavBar = () => {
     <motion.nav animate={{ x: [100, 0] }}>
       <ul className="navbar">
         <li className="">
-          <i className="fa-brands fa-github"></i>
+          <a target="_blank" href="https://github.com/KevindelCid">
+            <i className="fa-brands fa-github"></i>
+          </a>
         </li>
         <li>
-          <i className="fa-brands fa-linkedin"></i>
+          <a target="_blank" href="https://www.linkedin.com/in/kevindelcidf/">
+            <i className="fa-brands fa-linkedin"></i>
+          </a>
         </li>
         <li>
           <i className="fa-solid fa-microchip"></i>

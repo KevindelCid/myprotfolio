@@ -15,6 +15,7 @@ function App() {
       <NavBar />
 
       <Header />
+
       <AboutMe />
       <small className="comment">
         // Deberías ponerte en <a href="#contact">contacto</a> conmigo...{" "}

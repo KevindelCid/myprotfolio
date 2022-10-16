@@ -60,6 +60,7 @@ export const technologies = [
 
 export const proyects = [
   {
+    id: 1,
     name: "E-commerce",
     image: "https://i.postimg.cc/5yNcg5C1/image-3.jpg",
     description:
@@ -93,6 +94,7 @@ export const proyects = [
     ],
   },
   {
+    id: 2,
     name: "Traductor de inserts SQL para Laravel",
     image: "https://i.postimg.cc/L5X95Fvz/image-4.jpg",
     description:
@@ -113,6 +115,7 @@ export const proyects = [
     ],
   },
   {
+    id: 3,
     name: "App tareas Full-Stack",
     image: "https://i.postimg.cc/CKySp6tx/image-5.jpg",
     description:

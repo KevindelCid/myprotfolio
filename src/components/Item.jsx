@@ -21,6 +21,8 @@ export const Item = ({ item }) => {
           rotate: 360,
           transition: { duration: 0.3 },
         }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
         animate={{
           y: [item.id * -100, 55],
           x: [item.id * 10, 10, 0],
@@ -28,7 +30,11 @@ export const Item = ({ item }) => {
         transition={{ easeOut: "ease", duration: item.id / 3 }}
       />
 
-      <motion.p animate={{ y: [item.id * -100, 55] }}>
+      <motion.p
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        animate={{ y: [item.id * -100, 55] }}
+      >
         <span className=" gradiant-effect-for-text1 normalize-medium-text">
           {item.exp.substring(0, 2)}
         </span>

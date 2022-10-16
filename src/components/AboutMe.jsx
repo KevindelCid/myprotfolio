@@ -3,7 +3,11 @@ import React from "react";
 
 const AboutMe = () => {
   return (
-    <section className="aboutme-section">
+    <motion.section
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      className="aboutme-section"
+    >
       <div className="aboutme-text-container">
         <div className="about">
           <div>
@@ -105,7 +109,7 @@ const AboutMe = () => {
           />
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
