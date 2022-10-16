@@ -34,8 +34,8 @@ const Proyects = () => {
         >
           <img className="img-proyect" src={proyect.image} alt="" />
 
-          <p>
-            <h3 className="small-code gradiant-effect-for-text1 normalize-medium-text">
+          <p className="p-container">
+            <h3 className="proyect-title small-code gradiant-effect-for-text1 normalize-medium-text">
               {proyect.name}
             </h3>
             {proyect.description}
@@ -48,15 +48,14 @@ const Proyects = () => {
           </p>
         </motion.div>
       ))}
-
-      <h2 className="normalize-large-text">{"];"}</h2>
-
       <small className="comment">
         // Puedes ver todos mis proyectos en mi{" "}
         <a target="_blank" href="https://github.com/KevindelCid">
           GitHub <i className="fa-brands fa-github"></i>
         </a>{" "}
       </small>
+
+      <h2 className="normalize-large-text">{"];"}</h2>
     </section>
   );
 };

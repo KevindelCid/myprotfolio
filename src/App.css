@@ -92,6 +92,9 @@ img {
   justify-content: center;
 }
 
+.p-container {
+  min-width: 100px;
+}
 .home-container {
   margin: 0 auto;
 
@@ -116,7 +119,7 @@ i {
 }
 
 .navbar {
-  background-color: rgba(0, 255, 255, 0.055);
+  background-color: rgba(0, 39, 39, 0.37);
   position: fixed;
   width: 60px;
   height: fit-content;
@@ -130,7 +133,7 @@ i {
   gap: 20px;
   z-index: 50;
   padding: 15px 0;
-  border-radius: 0rem 0.5rem 0.5rem 0rem;
+  border-radius: 0.5rem 0rem 0rem 0.5rem;
 }
 
 a i {
@@ -406,6 +409,8 @@ a i {
 }
 .img-proyect {
   min-width: 100px;
+  object-fit: cover;
+  height: 200px;
 }
 .img-proyects-container2 {
   display: flex;
@@ -423,6 +428,11 @@ a i {
   justify-content: flex-end;
   align-items: revert;
   padding: 15px;
+  flex-wrap: wrap;
+}
+
+.proyect-title:hover {
+  text-decoration: dashed;
 }
 
 b-b {
