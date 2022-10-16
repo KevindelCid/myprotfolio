@@ -6,7 +6,7 @@ import { Item } from "./Item";
 const Skills = () => {
   const [items, setItems] = useState(technologies);
   return (
-    <section>
+    <section className="section-skills">
       <section className="tittle-skills">
         <div className="title-skills-container">
           <h2 className="normalize-large-text ">
