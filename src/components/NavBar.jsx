@@ -35,13 +35,14 @@ const NavBar = () => {
           </a>
         </li>
         <li>
-          <i className="fa-solid fa-microchip"></i>
+        <a href="#skills"> <i className="fa-solid fa-brain"></i></a> 
         </li>
         <li>
-          <i className="fa-solid fa-brain"></i>
+         <a href="#proyects"><i className="fa-solid fa-microchip"></i></a> 
         </li>
+        
         <li>
-          <i className="fa-solid fa-house-user"></i>
+         <a href="#home"> <i className="fa-solid fa-house-user"></i></a>
         </li>
         {/* 
 

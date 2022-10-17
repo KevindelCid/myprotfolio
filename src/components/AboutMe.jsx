@@ -89,14 +89,14 @@ const AboutMe = () => {
               </span>{" "}
               de experiencia, amo el desarrollo web y aprender día a día más
               <ul className="row t-r">
-                <li className="">
-                  <i className="fa-brands fa-github"></i>
+                <li className="clicleable">
+                  <a href="https://github.com/KevindelCid"  target="_blank"><i className="fa-brands fa-github"></i></a>
                 </li>
-                <li>
-                  <i className="fa-brands fa-linkedin"></i>
+                <li className="clicleable">
+                  <a href="https://www.linkedin.com/in/kevindelcidf/"  target="_blank"><i className="fa-brands fa-linkedin"></i></a>
                 </li>
-                <li>
-                  <i className="fa-solid fa-envelope"></i>
+                <li className="clicleable">
+                  <a href="mailto:kevindelcid731@gmail.com" target="_blank"><i className="fa-solid fa-envelope"></i></a>
                 </li>
               </ul>
             </motion.p>

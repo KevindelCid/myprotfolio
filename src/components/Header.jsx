@@ -7,7 +7,7 @@ const Header = () => {
   const [items, setItems] = useState(technologies);
 
   return (
-    <header className="header-container">
+    <header id="home" className="header-container">
       <div className="cube"></div>
       <div className="cube"></div>
       <div className="cube"></div>
@@ -57,33 +57,36 @@ const Header = () => {
           >
             del Cid
           </motion.h2>
-          <motion.h3>y soy un fanático del código! :D</motion.h3>
+          <motion.h3 className="p-20">y soy un fanático del código! :D</motion.h3>
 
-          <motion.button
+          <motion.a
             className="btn btn-contact primary-gradiant"
             animate={{ scale: [5, 1], x: [200, 0] }}
-           
+           href="#contact"
           >
             ¡Contáctame!
-          </motion.button>
-          <section className="qualities-container">
+          </motion.a>
+          <section className="qualities-container p-20">
             <ul className="option">
-              <li>
+             <a className="ali" href="./cv_kevin_del_cid.docx" download>
+              <li className="donwload-cv">
                 Cv es
                 <div className="options-cv">
                   <i className="fa-solid fa-download"></i>
-                  <i className="fa-solid fa-eye"></i>
+                
                 </div>
               </li>
-              <li>
-                <li>
+              </a> 
+              {/* <li>
+                <li  className="donwload-cv">
                   Cv en
                   <div className="options-cv">
+
                     <i className="fa-solid fa-download"></i>
-                    <i className="fa-solid fa-eye"></i>
+                   
                   </div>
                 </li>
-              </li>
+              </li> */}
             </ul>
           </section>
         </motion.div>
