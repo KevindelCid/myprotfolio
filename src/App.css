@@ -227,6 +227,10 @@ a i {
   color: var(--pprimary-text-color);
   text-decoration: none;
 }
+.footer{
+  padding: 20px;
+  text-align: center;
+}
 
 .btn-contact:hover {
   scale: 1.1;

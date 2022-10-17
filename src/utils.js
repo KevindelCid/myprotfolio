@@ -74,7 +74,7 @@ export const proyects = [
       },
       {
         name: "redux",
-        png: "https://assets.stickpng.com/images/5848309bcef1014c0b5e4a9a.png",
+        png: "https://cdn.worldvectorlogo.com/logos/redux.svg",
       },
       {
         name: "axios",
