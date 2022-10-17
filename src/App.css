@@ -339,11 +339,13 @@ a i {
 .normalize-small-text {
   font-size: small !important;
 }.align-l{
-  position: fixed;
+  position: absolute;
     top: 5px;
     left: 20px;
 }
-
+.bgn{
+  background-color: rgba(0, 39, 39, 0.37);
+}
 
 small>span{
   white-space: nowrap;

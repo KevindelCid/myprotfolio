@@ -17,21 +17,7 @@ const Header = () => {
 
       {/* <section className="name-container"> */}
 
-      <motion.small 
-        animate={{ opacity: [0, 1] }}
-        transition={{ duration: .5 }}
-      className=" small-code gradiant-effect-for-text1 normalize-medium-text align-l">
-         <motion.span
-          animate={{ opacity: [0, 1] }}
-          transition={{ duration: 1 }}
-        
-         className=" title-logo gradiant-effect-for-text2 normalize-small-text" >import</motion.span>{' { '}kDelCid{" }"}
-         <motion.span 
-           animate={{ opacity: [0, 1] }}
-           transition={{ duration: 1.5 }}
-         className="gradiant-effect-for-text2 normalize-small-text" > from </motion.span>
-         'development-lovers';
-            </motion.small>
+ 
 
            
       <div className="header1">
