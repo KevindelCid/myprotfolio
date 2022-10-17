@@ -21,19 +21,7 @@ const Skills = () => {
         </div>
       </section>
 
-      {/* <ul className="skills-container">
-        {technologies.map((tech) => (
-          <li className="skills-img-container">
-            <img className="skills-img-skill" src={tech.png} alt="" />
-            <p>
-              <span className=" gradiant-effect-for-text1 normalize-medium-text">
-                {tech.exp.substring(0, 2)}
-              </span>
-              {tech.exp.substring(2)}
-            </p>
-          </li>
-        ))}
-      </ul> */}
+      
       <div className="skills-container">
         {technologies.map((item) => (
           <Item

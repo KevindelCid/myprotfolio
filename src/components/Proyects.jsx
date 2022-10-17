@@ -35,23 +35,31 @@ const Proyects = () => {
           <img className="img-proyect" src={proyect.image} alt="" />
 
           <p className="p-container">
-            <h3 className="proyect-title small-code gradiant-effect-for-text1 normalize-medium-text">
+            <a href={proyect.link} target="_blank"><h3 className="proyect-title small-code gradiant-effect-for-text1 normalize-medium-text">
               {proyect.name}
-            </h3>
+            </h3></a>
             {proyect.description}
 
             <div className="tech-proyect-container">
               {proyect.technologies.map((tech) => (
-                <img className="tech-proyect" src={tech.png} alt="" />
+                <motion.img 
+                whileHover={{
+                  rotate: 360,
+                  transition: { duration: 0.3 },
+                }}
+                className="tech-proyect" src={tech.png} alt="" />
               ))}
             </div>
+            <a target="_blank" href={proyect.repo}>
+           <i className="fa-brands fa-github"></i>
+        </a>
           </p>
         </motion.div>
       ))}
       <small className="comment">
         // Puedes ver todos mis proyectos en mi{" "}
         <a target="_blank" href="https://github.com/KevindelCid">
-          GitHub <i className="fa-brands fa-github"></i>
+          GitHub <i className=" normalize-small-text  fa-brands fa-github"></i>
         </a>{" "}
       </small>
 

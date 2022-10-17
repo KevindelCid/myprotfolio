@@ -63,6 +63,8 @@ export const proyects = [
     id: 1,
     name: "E-commerce",
     image: "https://i.postimg.cc/5yNcg5C1/image-3.jpg",
+    link: "https://recommerceapp.netlify.app/",
+    repo: "https://github.com/KevindelCid/ReactEcommerce",
     description:
       "Prototipo de tienda en linea con carrito de compra persistencia de sesion y de carrito antes del login, filtrado, busqueda avanzada",
     technologies: [
@@ -97,6 +99,8 @@ export const proyects = [
     id: 2,
     name: "Traductor de inserts SQL para Laravel",
     image: "https://i.postimg.cc/L5X95Fvz/image-4.jpg",
+    link: "https://sqltolaravel.netlify.app/",
+    repo: "https://github.com/KevindelCid/sql_inserts_to_seeders_laravel",
     description:
       "Aporte a la comunidad de Laravel para la generación de Seeders dentro del proyecto",
     technologies: [
@@ -118,6 +122,8 @@ export const proyects = [
     id: 3,
     name: "App tareas Full-Stack",
     image: "https://i.postimg.cc/CKySp6tx/image-5.jpg",
+    link: "https://danitasks.netlify.app/",
+    repo: "https://github.com/KevindelCid/ReactTasks",
     description:
       "Construcción de una app full stack con react y laravel 9 en menos de 24 horas api desplegada en fly.io",
     technologies: [
