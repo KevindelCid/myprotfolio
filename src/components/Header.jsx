@@ -30,7 +30,7 @@ const Header = () => {
            animate={{ opacity: [0, 1] }}
            transition={{ duration: 1.5 }}
          className="gradiant-effect-for-text2 normalize-small-text" > from </motion.span>
-         'best_developers';
+         'development-lovers';
             </motion.small>
 
            
