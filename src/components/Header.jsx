@@ -16,7 +16,26 @@ const Header = () => {
       <div className="cube"></div>
 
       {/* <section className="name-container"> */}
+
+      <motion.small 
+        animate={{ opacity: [0, 1] }}
+        transition={{ duration: .5 }}
+      className=" small-code gradiant-effect-for-text1 normalize-medium-text align-l">
+         <motion.span
+          animate={{ opacity: [0, 1] }}
+          transition={{ duration: 1 }}
+        
+         className=" title-logo gradiant-effect-for-text2 normalize-small-text" >import</motion.span>{' { '}kDelCid{" }"}
+         <motion.span 
+           animate={{ opacity: [0, 1] }}
+           transition={{ duration: 1.5 }}
+         className="gradiant-effect-for-text2 normalize-small-text" > from </motion.span>
+         'best_developers';
+            </motion.small>
+
+           
       <div className="header1">
+     
         <motion.img
           animate={{ opacity: [0, 1] }}
           transition={{ duration: 1 }}
@@ -57,6 +76,7 @@ const Header = () => {
           <motion.button
             className="btn btn-contact primary-gradiant"
             animate={{ scale: [5, 1], x: [200, 0] }}
+           
           >
             ¡Contáctame!
           </motion.button>

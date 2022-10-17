@@ -45,7 +45,9 @@ img {
   height: 300px;
   mix-blend-mode: difference;
 }
-
+.v-align{
+  vertical-align: middle;
+}
 .name-container {
   width: fit-content;
 }
@@ -331,8 +333,39 @@ a i {
 .item-container {
   height: fit-content;
 }
-
+.normalize-text {
+  font-size: 16px !important;
+}
 .normalize-small-text {
+  font-size: small !important;
+}.align-l{
+  position: fixed;
+    top: 5px;
+    left: 20px;
+}
+
+
+small>span{
+  white-space: nowrap;
+  animation: typing 2s steps(12) blink .5s infinite step-end alternate;
+  overflow: hidden;
+}
+
+
+@keyframes typing {
+  from{
+    width: 0;
+  }
+  
+}
+  @keyframes blink {
+    50%{
+      border-color: transparent;
+    }
+  }
+
+
+.normalize-small-text i{
   font-size: small !important;
 }
 .normalize-medium-text {
@@ -340,6 +373,10 @@ a i {
 }
 .normalize-large-text {
   font-size: 50px !important;
+}
+
+.email-text{
+  text-decoration: overline !important;
 }
 /* .normalize-large-text {
   font-size: larger !important;
